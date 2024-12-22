@@ -1,0 +1,413 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+    font-family: "Parkinsans", sans-serif;
+}
+
+header {
+    margin-bottom: 5%;
+}
+
+header #titre {
+    border: 1px solid black;
+    padding: 10px 15px;
+    margin-left: 2%;
+    color: black;
+}
+
+header #titre:hover {
+    background-color: aliceblue;
+}
+
+#test {
+    display: none;
+}
+
+#img_menu {
+    position: absolute;
+    right: 1%;
+    width: 30px;
+    cursor: pointer;
+}
+
+header ul {
+    list-style: none;
+    position: absolute;
+    right: 3%;
+    width: 50%;
+}
+
+header ul li {
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+header ul li:hover {
+    background-color: gainsboro;
+    border: 1px solid black;
+    padding: 10px 0px;
+}
+
+header ul li a {
+    color: black;
+}
+
+nav {
+    display: none;
+}
+
+#test:checked~nav {
+    display: block;
+}
+
+.part_one {
+    background-color: #9400D3;
+    text-align: center;
+    color: white;
+    padding: 5% 20%;
+}
+
+.part_one img {
+    width: 100%;
+}
+
+.part_one p {
+    padding-bottom: 5%;
+    text-align: justify;
+}
+
+.part_one a {
+    color: white;
+    border: 1px solid red;
+    padding: 3%;
+    background-color: red;
+    border-radius: 7%;
+    margin-left: -50%;
+}
+.part_one a:hover{
+    background-color: rgba(255, 0, 0, 0.753);
+}
+.part_two {
+    display: none;
+}
+
+.part_three,
+.part_four,
+.part_five {
+    padding: 2% 20%;
+}
+
+.part_three h4,
+.part_four h4,
+.part_five h4 {
+    color: red;
+}
+
+.part_three h2,
+.part_four h2,
+.part_five h2 {
+    font-weight: 900;
+}
+
+.langages {
+    padding: 3% 20%;
+    background-color: rgba(220, 220, 220, 0.498);
+}
+
+.langages img {
+    width: 100%;
+    height: 20%;
+}
+
+.html p,
+.html h2 {
+    padding: 0% 8%;
+}
+
+.html {
+    border: 1px solid gainsboro;
+    width: 80%;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    background-color: aliceblue;
+    box-shadow: 10px 10px 5px lightblue;
+    cursor: pointer;
+}
+
+.css p,
+.css h2 {
+    padding: 0% 8%;
+}
+
+.css {
+    border: 1px solid gainsboro;
+    width: 80%;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    background-color: aliceblue;
+    box-shadow: 10px 10px 5px lightblue;
+    cursor: pointer;
+}
+
+.js p,
+.js h2 {
+    padding: 0% 8%;
+}
+
+.js {
+    border: 1px solid gainsboro;
+    width: 80%;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    background-color: aliceblue;
+    box-shadow: 10px 10px 5px lightblue;
+    cursor: pointer;
+}
+.html:hover{
+    transform: translateX(20px);
+}
+.css:hover{
+    transform: translateX(20px);
+}
+.js:hover{
+    transform: translateX(20px);
+}
+.footer {
+    border-top: 1px solid gainsboro;
+    background-color: rgba(128, 128, 128, 0.422);
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer .two img {
+    width: 3%;
+}
+
+.footer .four img {
+    width: 8%;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    header #titre {
+        width: 150px;
+        height: 40px;
+    }
+
+    #img_menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        position: relative;
+        margin-top: -5%;
+    }
+
+    header ul {
+        display: flex;
+        position: relative;
+        left: 60%;
+        width: 300px;
+        justify-content: space-between;
+    }
+
+    header ul li {
+        padding: 10px 0px;
+        border: 0px;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    header ul li:hover {
+        background-color: white;
+        border: 1px solid black;
+        padding: 1% 3%;
+    }
+
+    header {
+        display: inline-flex;
+    }
+
+    .part_one {
+        background-color: #9400D3;
+        color: white;
+        padding: 0;
+        height: 350px;
+        padding-top: 5%;
+    }
+
+    .part_one img {
+        float: left;
+        width: 40%;
+        margin: 5% 2% 0% 5%;
+    }
+
+    .part_one a {
+        margin-left: 15%;
+    }
+
+    .part_two {
+        display: initial;
+        text-align: center;
+    }
+
+    .part_two ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .part_two h2 {
+        padding: 0% 10%;
+    }
+
+    .part_two ul li span {
+        font-size: 25px;
+        font-weight: 900;
+        color: #00BFFF;
+    }
+
+    .part_two #code {
+        font-size: 20px;
+        font-weight: 900;
+        color: #00BFFF;
+    }
+
+    .part_three,
+    .part_four,
+    .part_five {
+        padding: 0%;
+    }
+
+    .part_three {
+        display: flex;
+        margin-bottom: 5%;
+    }
+
+    .part_three .paragraph {
+        margin-right: 3%;
+    }
+
+    .part_four {
+        display: flex;
+        margin-bottom: 5%;
+    }
+
+    .part_four .paragraph {
+        margin-left: 3%;
+    }
+
+    .part_five {
+        display: flex;
+        margin-bottom: 5%;
+    }
+
+    .part_five .paragraph {
+        margin-right: 3%;
+    }
+
+    .langages {
+        padding: 3% 10%;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: auto;
+    }
+
+    .langages img {
+        width: 100%;
+        height: 40%;
+    }
+
+    .footer {
+        display: flex;
+    }
+
+    .footer .two img {
+        width: 15%;
+        margin-top: 5%;
+    }
+
+    .footer .four img {
+        width: 20%;
+        padding: 0;
+        margin: 10% 0%;
+    }
+
+    .footer .four p {
+        padding-bottom: 50%;
+    }
+
+    .html {
+        margin: 5% 5%;
+    }
+
+    .css {
+        margin: 5% 5%;
+    }
+
+    .js {
+        margin: 5% 5%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 2% 0% 0% 0%;
+        padding: 0;
+    }
+
+    header {
+        margin-bottom: 0%;
+    }
+
+    nav ul {
+        width: 500px;
+        margin-top: 6%;
+        position: relative;
+        left: 10%;
+    }
+
+    .part_one {
+        padding-top: 3%;
+    }
+
+    .part_one img {
+        width: 26%;
+        margin: 1% 1% 5% 6%;
+    }
+
+    .part_one a {
+        padding: 1%;
+        margin-left: -50%;
+    }
+
+    .part_three,
+    .part_four,
+    .part_five {
+        padding: 2% 20%;
+    }
+
+    .footer {
+        justify-content: space-around;
+    }
+
+    .langages {
+        grid-template-columns: auto auto auto;
+
+    }
+
+}
